@@ -24,8 +24,6 @@ body > main {
 }
 
 #content_hero a {
-  background-color: white;
-  color: black;
   align-self: start;
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
@@ -54,4 +52,15 @@ body > main {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.inscribirse {
+  color: #000;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.inscribirse:hover {
+  color: black;
+  background-color: rgb(154, 255, 3);
 }
