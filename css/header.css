@@ -8,6 +8,7 @@ body > header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 9;
 }
 
 body > header > picture > img {
@@ -66,6 +67,27 @@ body > header > form label svg {
   display: none;
 }
 
+body > header > form > nav {
+  display: none;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(14, 87, 56, 0.2);
+  backdrop-filter: blur(4px);
+  display: none;
+}
+
+body:has(#actions input:checked)::before {
+  display: flex;
+}
+
 @media (max-width: 1032px) {
   body > header {
     width: 100%;
@@ -96,6 +118,41 @@ body > header > form label svg {
   }
   [for="btnMenu"] {
     display: flex;
+  }
+
+  body > header > form > nav {
+    position: fixed;
+    top: 6.2rem;
+    left: 0;
+    width: 100%;
+    background-color: rgb(14, 87, 56);
+    color: white;
+    border: 0.25rem solid white;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 2rem;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 1;
+    gap: 1rem;
+    transform: translateY(-100vw);
+    transition: all 300ms ease-in-out;
+  }
+
+  body > header > form > nav a {
+    display: flex;
+    font-size: 1rem;
+    transition: all 250ms ease-in-out;
+    color: white;
+    font-weight: 300;
+  }
+
+  body > header > form > nav a:active {
+    font-size: 1.4rem;
+  }
+
+  #btnMenu:checked ~ nav {
+    transform: translateX(0);
   }
 }
 
@@ -129,5 +186,108 @@ body > header > form label svg {
   }
   [for="btnMenu"] {
     display: flex;
+  }
+
+  body > header > form > nav {
+    position: fixed;
+    top: 6.2rem;
+    left: 0;
+    width: 100%;
+    background-color: rgb(14, 87, 56);
+    color: white;
+    border: 0.25rem solid white;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 2rem;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 1;
+    gap: 1rem;
+    transform: translateY(-100vw);
+    transition: all 300ms ease-in-out;
+  }
+
+  body > header > form > nav a {
+    display: flex;
+    font-size: 1rem;
+    transition: all 250ms ease-in-out;
+    color: white;
+    font-weight: 300;
+  }
+
+  body > header > form > nav a:active {
+    font-size: 1.4rem;
+  }
+
+  #btnMenu:checked ~ nav {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 320px) {
+  body > header {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  body > header > picture > img {
+    width: 4rem;
+    transform: scale(1.5);
+    transform-origin: center;
+    margin-left: 20px;
+  }
+
+  body > header > nav {
+    display: none;
+  }
+  body > header > form {
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  [for="btnMenu"] {
+    display: flex;
+  }
+
+  body > header > form > nav {
+    position: fixed;
+    top: 6.2rem;
+    left: 0;
+    width: 100%;
+    background-color: rgb(14, 87, 56);
+    color: white;
+    border: 0.25rem solid white;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 2rem;
+    border-radius: 0 0 1rem 1rem;
+    z-index: 1;
+    gap: 1rem;
+    transform: translateY(-100vw);
+    transition: all 300ms ease-in-out;
+  }
+
+  body > header > form > nav a {
+    display: flex;
+    font-size: 1rem;
+    transition: all 250ms ease-in-out;
+    color: white;
+    font-weight: 300;
+  }
+
+  body > header > form > nav a:active {
+    font-size: 1.4rem;
+  }
+
+  #btnMenu:checked ~ nav {
+    transform: translateX(0);
   }
 }
