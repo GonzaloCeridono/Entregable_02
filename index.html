@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>GNZ Coaching</title>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <!-- NAVBAR -->
     <header>
-      <a href="">
-        <img src="assets/images/logo.png" alt="Logo de la web" />
-      </a>
+      <picture>
+        <img src="assets/images/logo-removebg-preview.png" alt="Logo de la web" />
+      </picture>
       <nav>
-        <a title="inicio" href="#">Inicio</a>
-        <a title="info" href="#content_about">¿Quienes somos?</a>
-        <a
-          title="redes"
-          href="https://www.instagram.com/gonzaceridono/"
-          target="_blank"
-          >Seguinos en Instagram</a
-        >
-        <a title="contacto" href="#">Contactanos</a>
+        <a title="" href="#">Inicio</a>
+        <a title="" href="#content_about">¿Quienes somos?</a>
+        <a title="" href="#servicios">Nuestros servicios</a>
+        <a title="" href="#contacto">Contactanos</a>
       </nav>
+      <form>
+        <label for="btnMenu"><img src="assets/images/logo_menu.svg" alt=""></label>
+        <input type="checkbox" id="btnMenu">
+        <!-- <nav>
+          <a title="" href="#">Inicio</a>
+          <a title="" href="#content_about">¿Quienes somos?</a>
+          <a title="" href="#servicios">Nuestros servicios</a>
+          <a title="" href="#contacto">Contactanos</a>
+        </nav> -->
+      </form>
     </header>
 
     <!-- HERO -->
@@ -34,7 +39,10 @@
           para que lleves tu juego al maximo nivel, convirtiendote en uno de los
           mejores jugadores del servidor.
         </p>
-        <a href="#" class="btnRegistro">Inscribirse</a>
+        <nav class="btnContenedor">
+          <a href="registro.html" class="btnRegistro">Registrarse</a>
+          <a href="login.html" class="btnLogin">Iniciar sesión</a>
+        </nav>
       </article>
       <article id="card_hero">
         <picture><img src="assets/images/imagen.webp" alt="" /></picture>
@@ -57,5 +65,95 @@
         </article>
       </header>
     </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <header>
+        <h2>Nuestros Servicios</h2>
+      </header>
+      <section class="info_servicio">
+        <picture><img src="assets/images/servicio1.webp" alt=""></picture>
+        <h3>Creacion de equipo</h3>
+        <p>Te recomendamos jugadores y tacticas iniciales para que empieces a jugar</p>
+        <span>$2</span>
+      </section>
+      <section class="info_servicio">
+        <picture><img src="assets/images/servicio2.webp" alt=""></picture>
+        <h3>Coaching Básico</h3>
+        <p>Sesión de 1 hora donde analizamos tu estilo de juego y te entregamos un feedback.</p>
+        <span>$5</span>
+      </section>
+      <section class="info_servicio">
+        <picture><img src="assets/images/servicio3.webp" alt=""></picture>
+        <h3>Coaching Avanzado</h3>
+        <p>Entrenamiento personalizado con tácticas avanzadas para que eleves tu nivel de juego.</p>
+        <span>$10</span>
+      </section>
+      <section class="info_servicio">
+        <picture><img src="assets/images/imagen.webp" alt=""></picture>
+        <h3>Preparación Competitiva</h3>
+        <p>Preparación intensiva pensada especificamente para torneos y competiciones.</p>
+        <span>$25</span>
+      </section>
+      <section class="info_servicio">
+        <picture><img src="assets/images/imagen.webp" alt=""></picture>
+        <h3>Plan Semanal</h3>
+        <p>Acceso a coaching ilimitado durante una semana, que incluye todos los distintos servicios que ofrecemos.</p>
+        <span>$50</span>
+      </section>
+      <section class="info_servicio">
+        <picture><img src="assets/images/imagen.webp" alt=""></picture>
+        <h3>Plan Mensual</h3>
+        <p>Acceso a coaching ilimitado durante un mes, que incluye todos los distintos servicios que ofrecemos.</p>
+        <span>$80</span>
+      </section>
+    </section>
+
+    <!-- CONTACTO -->
+     <section id="contacto">
+        <article id="info_contacto">
+          <h2>Conocé nuestros canales de contacto</h2>
+          <article class="contenedor_info">
+            <ul>
+              <li><img src="assets/images/logo_direc.svg" alt="Icono de dirección">Avenida Aconquija 1300, Local 3</li>
+              <li><img src="assets/images/logo_email.svg" alt="Icono de Email">info@gnzcoaching.com</li>
+              <li><img src="assets/images/logo_tel.svg" alt="Icono de Telefono">+54 381-000-0000</li>
+            </ul>
+          </article>
+        </article>
+        <article id="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.1373794027636!2d-65.28926777265339!3d-26.814087170863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d5915c81bb%3A0x38d3c56ee0b18ff6!2sSolar%20del%20Cerro%20Shopping!5e0!3m2!1ses!2sar!4v1739059141864!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+     </section>
+    <section id="consulta">
+      <header>
+        <h3>
+          ¿Tenés alguna pregunta? Escribinos y te responderemos en la brevedad
+        </h3>
+      </header>
+      <form action="index.html" method="get">
+        <fieldset>
+            <label for="correo">E-mail</label>
+            <input type="email" name="correo" id="correo" required>
+        </fieldset>
+        <fieldset>
+            <label for="consulta">Escribinos tu consulta (máximo 200 caracteres)</label>
+            <textarea name="consulta" id="consulta" maxlength="200" required></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <a href="https://x.com/gonzaceridono" target="_blank">Nuestro X</a>
+        <a href="https://www.instagram.com/gonzaceridono/" target="_blank"
+          >Nuestro Instagram</a
+        >
+        <a href="https://www.youtube.com/@gnza9" target="_blank"
+          >Nuestro YouTube</a
+        >
+      </nav>
+    </footer>
   </body>
 </html>

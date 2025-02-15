@@ -1,4 +1,7 @@
-@import url(base.css);
-@import url(body.css);
-@import url(hero.css);
-@import url(about.css);
+@import url(css/base.css);
+@import url(css/header.css);
+@import url(css/hero.css);
+@import url(css/about.css);
+@import url(css/contacto.css);
+@import url(css/footer.css);
+@import url(css/servicios.css);

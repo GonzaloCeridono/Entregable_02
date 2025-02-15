@@ -1,0 +1,53 @@
+body > footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+body > footer nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+body > footer nav a {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+body > footer nav a {
+  color: rgba(255, 255, 255, 0.651);
+}
+@media (max-width: 1032px) {
+  body > footer {
+    gap: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  body > footer nav {
+    gap: 0.85rem;
+  }
+
+  body > footer nav a {
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body > footer {
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+  }
+
+  body > footer nav {
+    gap: 0.75rem;
+  }
+
+  body > footer nav a {
+    font-weight: bold;
+    font-size: 0.65rem;
+  }
+}

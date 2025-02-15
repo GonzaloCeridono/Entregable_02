@@ -1,0 +1,144 @@
+#servicios {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#servicios header {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.info_servicio {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(14, 87, 56);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info_servicio img {
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.info_servicio h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.info_servicio p {
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.info_servicio span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+@media (max-width: 1032px) {
+  #servicios {
+    gap: 20px;
+  }
+
+  #servicios header {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .info_servicio {
+    width: 250px;
+    height: 400px;
+    padding: 15px;
+  }
+
+  .info_servicio img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .info_servicio h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+
+  .info_servicio p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+
+  .info_servicio span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  #servicios {
+    gap: 10px;
+  }
+
+  #servicios header {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .info_servicio {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .info_servicio img {
+    display: none;
+  }
+
+  .info_servicio h3 {
+    color: white;
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+
+  .info_servicio p {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 5px;
+  }
+
+  .info_servicio span {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 8px;
+  }
+}
